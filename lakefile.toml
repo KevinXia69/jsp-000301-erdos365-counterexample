@@ -1,0 +1,11 @@
+name = "jsp_000301_erdos365_counterexample"
+version = "0.1.0"
+defaultTargets = ["Erdos365Counterexample"]
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "40e7c98697de6f66b8cbdbf641749ab39ed9c152"
+
+[[lean_lib]]
+name = "Erdos365Counterexample"
