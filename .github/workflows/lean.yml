@@ -3,8 +3,22 @@ name: Lean CI
 on:
   push:
     branches: ["main"]
+    paths:
+      - "**/*.lean"
+      - "lakefile.toml"
+      - "lake-manifest.json"
+      - "lean-toolchain"
+      - ".github/workflows/lean.yml"
+
   pull_request:
     branches: ["main"]
+    paths:
+      - "**/*.lean"
+      - "lakefile.toml"
+      - "lake-manifest.json"
+      - "lean-toolchain"
+      - ".github/workflows/lean.yml"
+
   workflow_dispatch:
 
 jobs:
