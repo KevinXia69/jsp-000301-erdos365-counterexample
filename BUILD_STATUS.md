@@ -1,28 +1,36 @@
 # Build status
 
-## Prepared target
+## Verified build
 
+The Lean project has been successfully built by GitHub Actions.
+
+- Workflow: `Lean CI`
+- Run number: `2`
+- Commit: `0f5f6d97e4f3ead3872cb18e62bb97436302f867`
+- Runner: `ubuntu-latest`
 - Lean toolchain: `leanprover/lean4:v4.33.1`
 - Formal Conjectures revision:
   `40e7c98697de6f66b8cbdbf641749ab39ed9c152`
-- Source proof: `Erdos365Counterexample.lean`
+- Result: `success`
 
-## Evidence available before a fresh build
+The build log reports:
 
-The pinned Formal Conjectures source already kernel-checks the same numerical
-pair with:
-
-```lean
-norm_num +contextual [Nat.Full, Nat.primeFactors, Nat.primeFactorsList]
+```text
+Built Erdos365Counterexample
+Build completed successfully (8909 jobs).
 ```
 
-to establish that `12167` is 3-full and `12168` is 2-full. Mathlib v4.33.1
-contains a `norm_num` extension that decides `IsSquare` for natural numerals.
+## Reproduction
 
-## Fresh build
+```bash
+lake build
+```
 
-A fresh Lean build was not executed in the artifact-generation sandbox because
-that environment did not contain a Lean toolchain and could not fetch one.
-The included GitHub Actions workflow is the authoritative next verification
-step. Do not state that this package is independently build-verified until that
-workflow passes.
+The project contains no `sorry`, `admit`, or user-declared axioms in
+`Erdos365Counterexample.lean`.
+
+## Scope
+
+This build verifies the Lean formalization of Golomb's counterexample to the
+first question of Erdős Problem 365 / JSP-000301. It does not settle the
+separate quantitative counting question.
