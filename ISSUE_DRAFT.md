@@ -134,6 +134,38 @@ subquestion is negative.
 It does not prove or claim anything about the separate quantitative counting
 question in Erdős Problem 365.
 
+## Prior submissions and priority disclosure
+
+The official Justin Sun Prize repository already contains earlier or
+independent JSP-000301 formalization and verification threads, including:
+
+- https://github.com/TheJustinSunPrize/awards/issues/25
+- https://github.com/TheJustinSunPrize/awards/issues/62
+- https://github.com/TheJustinSunPrize/awards/issues/64
+- https://github.com/TheJustinSunPrize/awards/issues/82
+- https://github.com/TheJustinSunPrize/awards/issues/94
+- https://github.com/TheJustinSunPrize/awards/issues/146
+- https://github.com/TheJustinSunPrize/awards/issues/156
+- https://github.com/TheJustinSunPrize/awards/issues/266
+
+The first public commit in the KevinXia69 repository containing this proof was
+published on 2026-09-16 at 16:13:09 UTC.
+
+This recommendation does not claim:
+
+- first discovery of the mathematical counterexample;
+- first public Lean formalization;
+- priority over any earlier submission; or
+- automatic entitlement to an award.
+
+It is submitted as a separate, independently maintained formal artifact using
+the Formal Conjectures canonical `Nat.Powerful` definition, a pinned dependency
+environment, and a successful public GitHub Actions build.
+
+The organizers are asked to assess it only under their attribution and
+verification rules, including whether it is useful as independent evidence, a
+backup verification artifact, or part of any joint formalization credit.
+
 ## Confirmation status
 
 Confirmed.
